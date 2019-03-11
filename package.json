@@ -1,0 +1,34 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "css-build": "node-sass _sass/main.scss public/css/main.css",
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-postcss": "postcss --use autoprefixer --output public/css/main.css public/css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "npm run css-deploy && npm run js-build",
+    "js-build": "babel _javascript --out-dir public/lib",
+    "js-watch": "npm run js-build -- --watch",
+    "server-start": "node server.js",
+    "test": "nodemon server.js && npm-run-all --parallel css-watch js-watch",
+    "start": "npm run server-start"
+  },
+  "author": "bootsie123",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "browser-sync": "^2.26.3",
+    "bulma": "^0.7.4",
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.1"
+  }
+}
