@@ -11,9 +11,10 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-    <section class="hero is-fullheight is-info is-bold">
+    <section id="home" class="hero is-fullheight is-info is-bold">
       <div class="hero-head">
         <nav class="navbar is-fixed-top" role="navgiation" aria-label="main navigation">
+          <div class="navbar-background"></div>
           <div class="navbar-brand">
             <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
               <span aria-hidden"true"></span>
@@ -23,13 +24,14 @@
           </div>
           <div id="navMenu" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item">About Me</a>
-              <a class="navbar-item">Projects</a>
+              <a class="navbar-item" href="#home">Home</a>
+              <a class="navbar-item" href="#aboutme">About Me</a>
+              <a class="navbar-item" href="#projects">Projects</a>
             </div>
           </div>
         </nav>
       </div>
-      <div class="hero-body">
+      <div id="hero-body" class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title is-1">High School Developer and Designer</h1>
           <h2 class="subtitle hero-subtitle">Just a higher school with a passion for all things computer science</h2>
@@ -42,7 +44,7 @@
         </div>
       </div>
     </section>
-    <section class="section alt-section">
+    <section id="aboutme" class="section alt-section">
       <div class="container">
         <h1 class="title section-title">About Me</h1>
         <div class="content is-medium has-text-justified">
@@ -136,7 +138,7 @@
         </div>
       </div>
     </section>
-    <section class="section recent-projects">
+    <section id="projects" class="section recent-projects">
       <div class="container">
         <h1 class="title section-title">Recent Projects</h1>
         <div class="columns is-mobile is-centered">
@@ -153,5 +155,6 @@
       </div>
     </section>
   </body>
-  <!--<script type="text/javascript" src="./lib/main.js"></script>-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="./lib/main.js"></script>
 </html>
