@@ -52,7 +52,7 @@ a.navbar-item:hover {
 
 .tool-logo {
   display: flex !important;
-  margin: .25 auto;
+  margin: .25rem auto;
   align-items: center !important;
   align-self: center !important;
   height: 115px;
