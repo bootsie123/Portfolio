@@ -99,6 +99,10 @@ a.navbar-item:hover {
 footer {
   padding-top: 6rem !important; }
 
+footer .column {
+  padding: 1rem !important;
+}
+
 ::-webkit-scrollbar {
   width: 5px; }
 
